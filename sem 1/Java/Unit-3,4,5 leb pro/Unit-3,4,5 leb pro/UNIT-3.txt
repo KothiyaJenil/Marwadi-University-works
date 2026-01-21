@@ -1,0 +1,430 @@
+					***UNIT-3***
+
+22.Write a java program to implement simple exception handling 
+
+class SimpleExceptionHandling {
+    public static void main(String[] args) {
+        try {
+            int a = 10, b = 0;
+            int c = a / b; // May throw exception
+            System.out.println("Result: " + c);
+        } catch (Exception e) {
+            System.out.println("Error: " + e);
+        }
+        System.out.println("Program continues...");
+    }
+}
+
+	***OUTPUT***
+
+Error: java.lang.ArithmeticException: / by zero
+Program continues...
+
+--------------------------------------------------------------------------------------------------
+
+23.Write a java program to implement ArithmeticException 
+
+class ArithmeticExample {
+    public static void main(String[] args) {
+        try {
+            int num = 10 / 0; // Division by zero
+        } catch (ArithmeticException e) {
+            System.out.println("Cannot divide by zero!");
+        }
+    }
+}
+
+
+	***OUTPUT***
+
+Cannot divide by zero!
+
+--------------------------------------------------------------------------------------------------
+
+24.Write a java program to use Finally block in Exception Handling 
+
+class FinallyExample {
+    public static void main(String[] args) {
+        try {
+            int num = 10 / 2;
+            System.out.println("Result: " + num);
+        } catch (ArithmeticException e) {
+            System.out.println("Error: " + e);
+        } finally {
+            System.out.println("Finally block executed.");
+        }
+    }
+}
+
+
+	***OUTPUT***
+
+Result: 5
+Finally block executed.
+
+--------------------------------------------------------------------------------------------------
+
+25.Write a java program to use Multiple Catch Block 
+
+class MultipleCatchExample {
+    public static void main(String[] args) {
+        try {
+            int arr[] = {10, 20, 30};
+            int num = arr[5] / 0;
+        } catch (ArithmeticException e) {
+            System.out.println("Arithmetic Exception!");
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Array Index Out of Bounds!");
+        } catch (Exception e) {
+            System.out.println("Other Exception: " + e);
+        }
+    }
+}
+
+
+	***OUTPUT***
+
+Array Index Out of Bounds!
+
+
+--------------------------------------------------------------------------------------------------
+
+26.Write a java program to use Throw Keyword 
+
+class ThrowExample {
+    static void checkAge(int age) {
+        if (age < 18)
+            throw new ArithmeticException("Not eligible to vote");
+        else
+            System.out.println("Eligible to vote");
+    }
+
+    public static void main(String[] args) {
+        checkAge(16);
+        System.out.println("End of program");
+    }
+}
+
+
+	***OUTPUT***
+
+Exception in thread "main" java.lang.ArithmeticException: Not eligible to vote
+
+--------------------------------------------------------------------------------------------------
+
+
+27.Write a java program to use Throws Keyword 
+
+class ThrowsExample {
+    static void divide() throws ArithmeticException {
+        int result = 10 / 0;
+        System.out.println("Result: " + result);
+    }
+
+    public static void main(String[] args) {
+        try {
+            divide();
+        } catch (ArithmeticException e) {
+            System.out.println("Exception handled: " + e);
+        }
+    }
+}
+
+
+	***OUTPUT***
+
+Exception handled: java.lang.ArithmeticException: / by zero
+
+--------------------------------------------------------------------------------------------------
+
+
+28.Write a java program to implement custom exception 
+
+class InvalidAgeException extends Exception {
+    public InvalidAgeException(String message) {
+        super(message);
+    }
+}
+
+class CustomExceptionDemo {
+    static void checkAge(int age) throws InvalidAgeException {
+        if (age < 18)
+            throw new InvalidAgeException("Age is below 18");
+        else
+            System.out.println("Valid Age");
+    }
+
+    public static void main(String[] args) {
+        try {
+            checkAge(15);
+        } catch (InvalidAgeException e) {
+            System.out.println("Caught Exception: " + e.getMessage());
+        }
+    }
+}
+
+
+	***OUTPUT***
+Caught Exception: Age is below 18
+
+
+--------------------------------------------------------------------------------------------------
+
+29.Write a java program to implement Exception Propagation 
+
+class PropagationExample {
+    void method1() {
+        int a = 10 / 0; // Exception here
+    }
+
+    void method2() {
+        method1();
+    }
+
+    void method3() {
+        try {
+            method2();
+        } catch (Exception e) {
+            System.out.println("Exception handled in method3: " + e);
+        }
+    }
+
+    public static void main(String[] args) {
+        new PropagationExample().method3();
+    }
+}
+
+
+	***OUTPUT***
+Exception handled in method3: java.lang.ArithmeticException: / by zero
+
+--------------------------------------------------------------------------------------------------
+
+30.Write a java program to implement Exception Chaining 
+
+class ChainingExample {
+    public static void main(String[] args) {
+        try {
+            try {
+                int a = 5 / 0;
+            } catch (ArithmeticException e) {
+                throw new Exception("Wrapped Exception", e);
+            }
+        } catch (Exception ex) {
+            System.out.println("Caught: " + ex);
+            System.out.println("Original cause: " + ex.getCause());
+        }
+    }
+}
+
+
+	***OUTPUT***
+
+Caught: java.lang.Exception: Wrapped Exception
+Original cause: java.lang.ArithmeticException: / by zero
+
+--------------------------------------------------------------------------------------------------
+
+31.Write a java program to use simple inner class in your program
+
+class Outer {
+    int x = 10;
+
+    class Inner {
+        void display() {
+            System.out.println("Value of x = " + x);
+        }
+    }
+
+    public static void main(String[] args) {
+        Outer o = new Outer();
+        Outer.Inner i = o.new Inner();
+        i.display();
+    }
+}
+ 
+
+	***OUTPUT***
+Value of x = 10
+
+--------------------------------------------------------------------------------------------------
+
+32.Write a java program to use Static Inner Class 
+
+class OuterStatic {
+    static int data = 50;
+
+    static class Inner {
+        void show() {
+            System.out.println("Data = " + data);
+        }
+    }
+
+    public static void main(String[] args) {
+        OuterStatic.Inner obj = new OuterStatic.Inner();
+        obj.show();
+    }
+}
+
+
+	***OUTPUT***
+Data = 50
+
+--------------------------------------------------------------------------------------------------
+
+33.Write a java program to use Local Inner Class 
+
+class LocalInnerExample {
+    void outerMethod() {
+        class Inner {
+            void msg() {
+                System.out.println("Inside Local Inner Class");
+            }
+        }
+        Inner in = new Inner();
+        in.msg();
+    }
+
+    public static void main(String[] args) {
+        new LocalInnerExample().outerMethod();
+    }
+}
+
+
+	***OUTPUT***
+Inside Local Inner Class
+
+--------------------------------------------------------------------------------------------------
+
+34.Write a java program to use Nested Interface 
+
+interface OuterInterface {
+    void outerMethod();
+
+    interface InnerInterface {
+        void innerMethod();
+    }
+}
+
+class TestNestedInterface implements OuterInterface.InnerInterface {
+    public void innerMethod() {
+        System.out.println("Nested Interface Implemented");
+    }
+
+    public static void main(String[] args) {
+        OuterInterface.InnerInterface obj = new TestNestedInterface();
+        obj.innerMethod();
+    }
+}
+
+
+	***OUTPUT***
+Nested Interface Implemented
+
+--------------------------------------------------------------------------------------------------
+
+35.Write a java program to display date in different format 
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+class DateFormatExample {
+    public static void main(String[] args) {
+        Date date = new Date();
+
+        SimpleDateFormat f1 = new SimpleDateFormat("dd/MM/yyyy");
+        SimpleDateFormat f2 = new SimpleDateFormat("EEEE, MMMM dd, yyyy");
+        SimpleDateFormat f3 = new SimpleDateFormat("hh:mm:ss a");
+
+        System.out.println("Format 1: " + f1.format(date));
+        System.out.println("Format 2: " + f2.format(date));
+        System.out.println("Format 3: " + f3.format(date));
+    }
+}
+
+
+	***OUTPUT***
+Format 1: 11/11/2025
+Format 2: Tuesday, November 11, 2025
+Format 3: 07:45:30 PM
+
+--------------------------------------------------------------------------------------------------
+
+36.Write a java program to display different calendar 
+
+import java.util.Calendar;
+
+class CalendarInfo {
+    public static void main(String[] args) {
+        Calendar c = Calendar.getInstance();
+
+        System.out.println("Year: " + c.get(Calendar.YEAR));
+        System.out.println("Month: " + (c.get(Calendar.MONTH) + 1));
+        System.out.println("Day: " + c.get(Calendar.DAY_OF_MONTH));
+        System.out.println("Hour: " + c.get(Calendar.HOUR));
+        System.out.println("Minute: " + c.get(Calendar.MINUTE));
+        System.out.println("Second: " + c.get(Calendar.SECOND));
+    }
+}
+
+
+	***OUTPUT***
+Year: 2025
+Month: 11
+Day: 11
+Hour: 7
+Minute: 45
+Second: 30
+
+information using calendar class 
+
+--------------------------------------------------------------------------------------------------
+
+37.Write a java program to add, subtract a days/month into current date and time 
+
+import java.util.Calendar;
+
+class DateAddSubtract {
+    public static void main(String[] args) {
+        Calendar c = Calendar.getInstance();
+        System.out.println("Current Date: " + c.getTime());
+
+        c.add(Calendar.DATE, 10); // Add 10 days
+        System.out.println("After adding 10 days: " + c.getTime());
+
+        c.add(Calendar.MONTH, -2); // Subtract 2 months
+        System.out.println("After subtracting 2 months: " + c.getTime());
+    }
+}
+
+
+	***OUTPUT***
+
+Current Date: Tue Nov 11 19:45:30 IST 2025
+After adding 10 days: Fri Nov 21 19:45:30 IST 2025
+After subtracting 2 months: Sun Sep 21 19:45:30 IST 2025
+
+--------------------------------------------------------------------------------------------------
+
+38.Write a java program to use Gregorian calendar to display calendar information
+
+import java.util.GregorianCalendar;
+
+class GregorianExample {
+    public static void main(String[] args) {
+        GregorianCalendar g = new GregorianCalendar();
+
+        System.out.println("Date: " + g.getTime());
+        System.out.println("Year: " + g.get(Calendar.YEAR));
+        System.out.println("Is Leap Year? " + g.isLeapYear(g.get(Calendar.YEAR)));
+    }
+}
+
+
+	***OUTPUT*** 
+
+Date: Tue Nov 11 19:45:30 IST 2025
+Year: 2025
+Is Leap Year? false
+
+--------------------------------------------------------------------------------------------------

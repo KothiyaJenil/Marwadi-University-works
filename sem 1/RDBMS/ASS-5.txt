@@ -1,0 +1,252 @@
+d    -- Q1. Create table
+CREATE TABLE Employee (
+    Emp_no CHAR(5),
+    Emp_name CHAR(20),
+    Emp_street CHAR(30),
+    Emp_city CHAR(20)
+);
+Table created.
+
+-- Q2. Insert data
+INSERT INTO Employee VALUES ('E1','Riya','Ring road-11','Rajkot');
+INSERT INTO Employee VALUES ('E2','Shital','CG Raod-02','Ahmedabad');
+INSERT INTO Employee VALUES ('E3','Harshid','Boriwali-05','Jamnagar');
+INSERT INTO Employee VALUES ('E4','Janak','HJ Road-16','Pune');
+INSERT INTO Employee VALUES ('E5','Naman','Mira Nager-20','Mumbai');
+
+1 row created.
+
+-- Q3. Display Emp_no
+SELECT Emp_no FROM Employee;
+EMP_N
+-----
+E1
+E2
+E3
+E4
+E5
+
+-- Q4. Display Emp_name
+SELECT Emp_name FROM Employee;
+EMP_NAME
+--------------------
+Riya
+Shital
+Harshid
+Janak
+Naman
+
+-- Q5. Display Emp_street
+SELECT Emp_street FROM Employee;
+EMP_STREET
+------------------------------
+Ring road-11
+CG Raod-02
+Boriwali-05
+HJ Road-16
+Mira Nager-20
+
+-- Q6. Display Emp_city
+SELECT Emp_city FROM Employee;
+EMP_CITY
+--------------------
+Rajkot
+Ahmedabad
+Jamnagar
+Pune
+Mumbai
+
+-- Q7. Display Emp_no and Emp_name
+SELECT Emp_no, Emp_name FROM Employee;
+EMP_N EMP_NAME
+----- --------------------
+E1    Riya
+E2    Shital
+E3    Harshid
+E4    Janak
+E5    Naman
+
+-- Q8. Display Emp_street and Emp_city
+SELECT Emp_street, Emp_city FROM Employee;
+
+EMP_STREET	EMP_CITY
+Ring road-11	Rajkot
+CG Raod-02	Ahmedabad
+Boriwali-05	Jamnagar
+HJ Road-16	Pune
+Mira Nager-20	Mumbai
+
+-- Q9. Display all information
+SELECT * FROM Employee;
+
+EMP_N	EMP_NAME	EMP_STREET	EMP_CITY
+E1	Riya		Ring road-11	Rajkot
+E2	Shital		CG Raod-02	Ahmedabad
+E3	Harshid		Boriwali-05	Jamnagar
+E4	Janak		HJ Road-16	Pune
+E5	Naman		Mira Nager-20	Mumbai
+
+-- Q10. Employee belongs to Mira Nager-20
+SELECT * FROM Employee WHERE Emp_street='Mira Nager-20';
+
+MP_N	EMP_NAME	EMP_STREET	EMP_CITY
+E5	Naman	      	Mira Nager-20	Mumba
+
+
+-- Q11. Employee belongs to Rajkot
+SELECT * FROM Employee WHERE Emp_city='Rajkot';
+
+EMP_N        EMP_NAME             EMP_STREET            EMP_CITY
+----- -------------------- ------------------------------ --------------------
+E1                     Riya                       Ring road-11                  Rajkot
+
+-- Q12. Emp_name who belongs to Ahmedabad
+SELECT Emp_name FROM Employee WHERE Emp_city='Ahmedabad';
+
+EMP_NAME
+--------------------
+Shital
+
+-- Q13. Employee having emp_id=E2
+SELECT * FROM Employee WHERE Emp_no='E2';
+
+EMP_N      EMP_NAME             EMP_STREET                     EMP_CITY
+----- -------------------- ------------------------------ --------------------
+E2              Shital                        CG Raod-02                     Ahmedabad
+
+-- Q14. Change emp_id=1 of employee from Rajkot
+UPDATE Employee SET Emp_no='1' WHERE Emp_city='Rajkot';
+
+1 row updated.
+
+-- Q15. Change emp_id=2 of employee from Mira Nager-20
+UPDATE Employee SET Emp_no='2' WHERE Emp_street='Mira Nager-20';
+
+1 row updated.
+
+-- Q16. Change emp_id=3 of employee whose name is Shital
+UPDATE Employee SET Emp_no='3' WHERE Emp_name='Shital';
+1 row updated.
+
+-- Q18. Change emp_id=4 of employee whose name is Janak
+UPDATE Employee SET Emp_no='4' WHERE Emp_name='Janak';
+1 row updated.
+
+-- Q19. Change emp_id=5 of employee whose city is Jamnagar
+UPDATE Employee SET Emp_no='5' WHERE Emp_city='Jamnagar';
+1 row updated.
+
+-- Q20. Change emp_city=Mandvi of employee whose name is Janak
+UPDATE Employee SET Emp_city='Mandvi' WHERE Emp_name='Janak';
+1 row updated.
+
+-- Q21. Add new column State
+ALTER TABLE Employee ADD State CHAR(20);
+Table altered.
+
+-- Q22. Add column ph_no
+ALTER TABLE Employee ADD ph_no VARCHAR(15);
+Table altered.
+
+
+-- Q23. Add new column salary
+ALTER TABLE Employee ADD salary INT;
+Table altered.
+
+-- Q24. Insert salary=2000 whose name=Riya
+UPDATE Employee SET salary=2000 WHERE Emp_name='Riya';
+1 row updated.
+
+-- Q25. Insert salary=5000 whose emp_id=2
+UPDATE Employee SET salary=5000 WHERE Emp_no='2';
+1 row updated.
+
+-- Q26. Insert salary=52000 whose emp_id=3
+UPDATE Employee SET salary=52000 WHERE Emp_no='3';
+1 row updated.
+
+-- Q27. Insert salary=89000 whose street=Mira Nager-20
+UPDATE Employee SET salary=89000 WHERE Emp_street='Mira Nager-20';
+1 row updated.
+
+-- Q28. Insert salary=1500 whose emp_id=4
+UPDATE Employee SET salary=1500 WHERE Emp_no='4';
+1 row updated.
+
+-- Q30. Change emp_city=Banglor whose salary>60000
+UPDATE Employee SET Emp_city='Banglor' WHERE salary>60000;
+1 row updated.
+
+-- Q31. Create new table emp_detail from Employee
+CREATE TABLE emp_detail AS SELECT * FROM Employee;
+Table created.
+
+-- Q32. Rename employee table by EMP
+ALTER TABLE Employee RENAME TO EMP;
+Table altered.
+
+-- Q33. Delete employee whose salary>60000
+DELETE FROM EMP WHERE salary>60000;
+1 row deleted.
+
+-- Q34. Delete column ph_no from EMP
+ALTER TABLE EMP DROP COLUMN ph_no;
+Table altered.
+
+-- Q35. Describe structure of EMP
+DESC EMP;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMP_NO                                             CHAR(5)
+ EMP_NAME                                           CHAR(20)
+ EMP_STREET                                         CHAR(30)
+ EMP_CITY                                           CHAR(20)
+ STATE                                              VARCHAR2(20)
+ SALARY                                             NUMBER(38)
+
+-- Q36. Describe structure of emp_detail
+DESC emp_detail;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMP_NO                                             CHAR(5)
+ EMP_NAME                                           CHAR(20)
+ EMP_STREET                                         CHAR(30)
+ EMP_CITY                                           CHAR(20)
+ STATE                                              VARCHAR2(20)
+ PH_NO                                              VARCHAR2(15)
+ SALARY                                             NUMBER(38)
+
+-- Q37. Display employee sorted by emp_name
+SELECT * FROM EMP ORDER BY Emp_name;
+EMP_N EMP_NAME             EMP_STREET                     EMP_CITY             STATE                    SALARY
+----- -------------------- ------------------------------ -------------------- -------------------- ----------
+5     Harshid              Boriwali-05                    Jamnagar
+4     Janak                HJ Road-16                     Mandvi                                          1500
+1     Riya                 Ring road-11                   Rajkot                                          2000
+3     Shital               CG Raod-02                     Ahmedabad                                      52000
+
+-- Q38. Display employee sorted by city
+SELECT * FROM EMP ORDER BY Emp_city;
+EMP_N EMP_NAME             EMP_STREET                     EMP_CITY             STATE                    SALARY
+----- -------------------- ------------------------------ -------------------- -------------------- ----------
+3     Shital               CG Raod-02                     Ahmedabad                                      52000
+5     Harshid              Boriwali-05                    Jamnagar
+4     Janak                HJ Road-16                     Mandvi                                          1500
+1     Riya                 Ring road-11                   Rajkot                                          2000
+
+-- Q39. Display employee sorted by salary
+SELECT * FROM EMP ORDER BY salary;
+EMP_N EMP_NAME             EMP_STREET                     EMP_CITY             STATE                    SALARY
+----- -------------------- ------------------------------ -------------------- -------------------- ----------
+4     Janak                HJ Road-16                     Mandvi                                          1500
+1     Riya                 Ring road-11                   Rajkot                                          2000
+3     Shital               CG Raod-02                     Ahmedabad                                      52000
+5     Harshid              Boriwali-05                    Jamnagar
+
+-- Q40. Drop table emp_detail
+DROP TABLE emp_detail;
+
+Table dropped.
+
+
+

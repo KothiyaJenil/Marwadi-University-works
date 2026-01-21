@@ -1,0 +1,297 @@
+					***UNIT-4***
+--------------------------------------------------------------------------------------------------
+
+39.Write a java program to store multiple elements using an ArrayList
+
+import java.util.*;
+
+class ArrayListExample {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+
+        list.add("Apple");
+        list.add("Banana");
+        list.add("Cherry"); 
+        list.add("Mango");
+
+        System.out.println("ArrayList Elements:");
+        for (String fruit : list)
+            System.out.println(fruit);
+    }
+}
+ 
+
+
+	***OUTPUT*** 
+
+ArrayList Elements:
+Apple
+Banana
+Cherry
+Mango
+
+--------------------------------------------------------------------------------------------------
+
+40.Write a java program to add multiple elements into LinkedList 
+
+import java.util.*;
+
+class LinkedListExample {
+    public static void main(String[] args) {
+        LinkedList<String> list = new LinkedList<>();
+
+        list.add("Red");
+        list.add("Green");
+        list.add("Blue");
+        list.add("Yellow");
+
+        System.out.println("LinkedList Elements:");
+        for (String color : list)
+            System.out.println(color);
+    }
+}
+
+
+	***OUTPUT*** 
+
+LinkedList Elements:
+Red
+Green
+Blue
+Yellow
+
+--------------------------------------------------------------------------------------------------
+
+41.Write a java program to store multiple values in a Vector and fetch it using an Enumeration 
+
+import java.util.*;
+
+class VectorExample {
+    public static void main(String[] args) {
+        Vector<Integer> vec = new Vector<>();
+
+        vec.add(10);
+        vec.add(20);
+        vec.add(30);
+        vec.add(40);
+
+        System.out.println("Vector Elements:");
+        Enumeration<Integer> e = vec.elements();
+        while (e.hasMoreElements())
+            System.out.println(e.nextElement());
+    }
+}
+	
+	***OUTPUT*** 
+ Vector Elements:
+10
+20
+30
+40
+
+--------------------------------------------------------------------------------------------------
+
+42.Write a java program to store multiple values in a Queue and perform different operation on it
+
+import java.util.*;
+
+class QueueExample {
+    public static void main(String[] args) {
+        Queue<String> queue = new LinkedList<>();
+
+        queue.add("A");
+        queue.add("B");
+        queue.add("C");
+        queue.add("D");
+
+        System.out.println("Queue Elements: " + queue);
+
+        System.out.println("Removed Element: " + queue.remove());
+        System.out.println("Head Element: " + queue.peek());
+        System.out.println("Queue after Operations: " + queue);
+    }
+}
+
+	***OUTPUT*** 
+
+Queue Elements: [A, B, C, D]
+Removed Element: A
+Head Element: B
+Queue after Operations: [B, C, D]
+
+-------------------------------------------------------------------------------------------------- 
+43.Write a java program to add Book IDs and Book Names (Pairs) using a HashSet 
+
+import java.util.*;
+
+class HashSetExample {
+    public static void main(String[] args) {
+        HashSet<String> books = new HashSet<>();
+
+        books.add("101 - Java Programming");
+        books.add("102 - Python Basics");
+        books.add("103 - Database Systems");
+        books.add("104 - Data Structures");
+
+        System.out.println("Book IDs and Names:");
+        for (String b : books)
+            System.out.println(b);
+    }
+}
+
+
+	***OUTPUT*** 
+
+Book IDs and Names:
+104 - Data Structures
+101 - Java Programming
+103 - Database Systems
+102 - Python Basics
+
+--------------------------------------------------------------------------------------------------
+44.Write a java program to demonstrate PriorityQueue 
+
+import java.util.*;
+
+class PriorityQueueExample {
+    public static void main(String[] args) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+        pq.add(30);
+        pq.add(10);
+        pq.add(50);
+        pq.add(20);
+
+        System.out.println("PriorityQueue Elements: " + pq);
+        System.out.println("Head Element: " + pq.peek());
+        pq.poll();
+        System.out.println("After removing Head: " + pq);
+    }
+}
+
+
+	***OUTPUT*** 
+
+PriorityQueue Elements: [10, 20, 50, 30]
+Head Element: 10
+After removing Head: [20, 30, 50]
+
+--------------------------------------------------------------------------------------------------
+45.Write a java program to store different mapped values (Key Value) using a TreeMap Class  
+
+import java.util.*;
+
+class TreeMapExample {
+    public static void main(String[] args) {
+        TreeMap<Integer, String> map = new TreeMap<>();
+
+        map.put(3, "C");
+        map.put(1, "A");
+        map.put(4, "D");
+        map.put(2, "B");
+
+        System.out.println("TreeMap Elements:");
+        for (Map.Entry<Integer, String> entry : map.entrySet())
+            System.out.println(entry.getKey() + " => " + entry.getValue());
+    }
+}
+
+	***OUTPUT*** 
+
+TreeMap Elements:
+1 => A
+2 => B
+3 => C
+4 => D
+
+--------------------------------------------------------------------------------------------------
+46.Write a java program to add multiple elements using a SortedSet of collection
+
+import java.util.*;
+
+class SortedSetExample {
+    public static void main(String[] args) {
+        SortedSet<String> set = new TreeSet<>();
+
+        set.add("Banana");
+        set.add("Apple");
+        set.add("Mango");
+        set.add("Cherry");
+
+        System.out.println("SortedSet Elements:");
+        for (String fruit : set)
+            System.out.println(fruit);
+    }
+}
+
+
+	***OUTPUT*** 
+
+SortedSet Elements:
+Apple
+Banana
+Cherry
+Mango
+
+-------------------------------------------------------------------------------------------------- 
+47.Write a java program to add multiple elements and perform operation based on LIFO method using a Stack Class of collection interface 
+
+import java.util.*;
+
+class StackExample {
+    public static void main(String[] args) {
+        Stack<Integer> stack = new Stack<>();
+
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+
+        System.out.println("Stack Elements: " + stack);
+        System.out.println("Top Element: " + stack.peek());
+        System.out.println("Popped Element: " + stack.pop());
+        System.out.println("Stack after Pop: " + stack);
+    }
+}
+
+
+	***OUTPUT*** 
+
+Stack Elements: [10, 20, 30, 40]
+Top Element: 40
+Popped Element: 40
+Stack after Pop: [10, 20, 30]
+
+-------------------------------------------------------------------------------------------------- 
+
+48.Write a java program to add different values in a pair (key-value) into a TreeMap and perform different operations on it
+
+import java.util.*;
+
+class TreeMapOperations {
+    public static void main(String[] args) {
+        TreeMap<Integer, String> map = new TreeMap<>();
+
+        map.put(1001, "Book A");
+        map.put(1003, "Book C");
+        map.put(1002, "Book B");
+
+        System.out.println("TreeMap: " + map);
+
+        System.out.println("First Key: " + map.firstKey());
+        System.out.println("Last Key: " + map.lastKey());
+        map.remove(1002);
+        System.out.println("After Removing Key 1002: " + map);
+    }
+}
+
+
+	***OUTPUT*** 
+
+TreeMap: {1001=Book A, 1002=Book B, 1003=Book C}
+First Key: 1001
+Last Key: 1003
+After Removing Key 1002: {1001=Book A, 1003=Book C}
+
+
+--------------------------------------------------------------------------------------------------

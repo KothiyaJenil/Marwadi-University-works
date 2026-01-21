@@ -1,0 +1,1599 @@
+1. Data structures that follow LIFO order are called?
+
+a) Queue
+b) Stack
+c) Linked list
+d) Tree
+Answer: b
+
+2. Which of the following is a primitive data type?
+
+a) Array
+b) Structure
+c) Integer
+d) Linked list
+Answer: c
+
+3. In a queue, deletion happens at the ______.
+
+a) Middle
+b) Rear
+c) Front
+d) Top
+Answer: c
+
+4. In a linked list, the last node contains ______.
+
+a) Zero
+b) NULL
+c) Data only
+d) Previous pointer
+Answer: b
+
+5. Binary search works only on ______ arrays.
+
+a) Small
+b) Unordered
+c) Sorted
+d) Reversed
+Answer: c
+
+6. Which notation places operator AFTER operands?
+
+a) Infix
+b) Prefix
+c) Postfix
+d) Mixed
+Answer: c
+
+7. The maximum number of nodes at level ‘k’ in a binary tree is?
+
+a) k
+b) 2^k
+c) k²
+d) 2k
+Answer: b
+
+8. Push operation is performed on the ______ of stack.
+
+a) Bottom
+b) Any position
+c) Top
+d) Middle
+Answer: c
+
+9. Insertion in a circular queue happens at ______.
+
+a) Front
+b) Rear
+c) Random
+d) Bottom
+Answer: b
+
+10. A function calling itself is called?
+
+a) Loop
+b) Recursion
+c) Iteration
+d) Stack
+Answer: b
+
+11. Which traversal visits Left → Root → Right?
+
+a) Preorder
+b) Inorder
+c) Postorder
+d) Level order
+Answer: b
+
+12. The pointer that stores the first node of a linked list is called?
+
+a) HEAD
+b) TAIL
+c) FRONT
+d) START
+Answer: d
+
+13. A full binary tree is a tree in which every node has ____ children.
+
+a) 0 or 1
+b) Only 1
+c) 3
+d) 0 or 2
+Answer: d
+
+14. The worst case time complexity of linear search is?
+
+a) O(log n)
+b) O(n)
+c) O(1)
+d) O(n log n)
+Answer: b
+
+15. Which data structure is used in recursion implementation?
+
+a) Queue
+b) Array
+c) Stack
+d) Tree
+Answer: c
+
+16. In hashing, when two keys map to same index, it is called?
+
+a) Exception
+b) Collision
+c) Overflow
+d) Clash
+Answer: b
+
+17. Which one is NOT a non-linear data structure?
+
+a) Graph
+b) Tree
+c) Linked list
+d) Binary tree
+Answer: c
+
+18. In binary tree, a node with no children is?
+
+a) Root
+b) Leaf
+c) Internal node
+d) Sibling
+Answer: b
+
+19. Queue follows ______.
+
+a) LIFO
+b) FIFO
+c) FILO
+d) LILO
+Answer: b
+
+20. Which sorting algorithm repeatedly selects the smallest element?
+
+a) Merge sort
+b) Selection sort
+c) Quick sort
+d) Bubble sort
+Answer: b
+
+21. AVL tree is also known as ______.
+
+a) Balanced binary tree
+b) Threaded tree
+c) Binary search tree
+d) Heap
+Answer: a
+
+22. A graph with no cycles is known as?
+
+a) Directed graph
+b) Tree
+c) Non-simple graph
+d) Loop graph
+Answer: b
+
+23. In insertion sort, the list is divided into ______.
+
+a) Two sorted halves
+b) Sorted and unsorted part
+c) Pair of numbers
+d) Levels
+Answer: b
+
+24. Linked list is a ______.
+
+a) Static DS
+b) Dynamic DS
+c) Fixed DS
+d) Hardware DS
+Answer: b
+
+25. In binary search, each step reduces the search space by?
+
+a) 1 element
+b) Half
+c) One-third
+d) All
+Answer: b
+
+26. In stack, removing an element is called?
+
+a) Delete
+b) Pop
+c) Evict
+d) Unload
+Answer: b
+
+27. Circular queue solves the problem of?
+
+a) Recursion
+b) Memory leak
+c) Wasted space in simple queue
+d) Slow execution
+Answer: c
+
+28. In doubly linked list, every node has?
+
+a) Only next pointer
+b) Only previous pointer
+c) Two pointers
+d) No pointers
+Answer: c
+
+29. Which notation removes need of parentheses?
+
+a) Postfix
+b) Infix
+c) Linear
+d) Binary
+Answer: a
+
+30. Hash function should avoid?
+
+a) Division
+b) Collisions
+c) Modulus
+d) Simple operations
+Answer: b
+
+31. Time complexity of bubble sort (worst case)?
+
+a) O(n)
+b) O(log n)
+c) O(n²)
+d) O(n log n)
+Answer: c
+
+32. The height of a tree is the height of its?
+
+a) Left subtree
+b) Right subtree
+c) Root node
+d) Deepest leaf node
+Answer: d
+
+33. BFS of a graph uses?
+
+a) Stack
+b) Queue
+c) Array
+d) Linked list only
+Answer: b
+
+34. DFS of a graph uses which DS?
+
+a) Stack
+b) Queue
+c) Array
+d) Matrix
+Answer: a
+
+35. A collection of disjoint trees is called?
+
+a) Forest
+b) Jungle
+c) Map
+d) Graph
+Answer: a
+
+36. Another name for a node with children is?
+
+a) Leaf
+b) Parent
+c) Sibling
+d) Root
+Answer: b
+
+37. Which queue allows insertion and deletion at both ends?
+
+a) Simple queue
+b) DEQueue
+c) Priority queue
+d) Circular queue
+Answer: b
+
+38. A BST stores smaller values on ______.
+
+a) Left
+b) Right
+c) Both
+d) Neither
+Answer: a
+
+39. The array index starts from?
+
+a) 2
+b) 0
+c) 1
+d) -1
+Answer: b
+
+40. The pointer that stores free memory node list in linked list is?
+
+a) FREE
+b) START
+c) AVAIL
+d) TOP
+Answer: c
+
+41. Which tree traversal is used to get sorted data from BST?
+
+a) Preorder
+b) Inorder
+c) Postorder
+d) Reverse
+Answer: b
+
+42. The process of visiting each element in DS is called?
+
+a) Traversal
+b) Scan
+c) Iterate
+d) Move
+Answer: a
+
+43. Which is a linear DS?
+
+a) Tree
+b) Graph
+c) Stack
+d) Heap
+Answer: c
+
+44. What is used to store multiple values of same type?
+
+a) Structure
+b) Array
+c) Pointer
+d) Char
+Answer: b
+
+45. A function should have a terminating condition in?
+
+a) Loop
+b) Recursion
+c) Constructor
+d) Destructor
+Answer: b
+
+46. Threaded binary tree replaces NULL pointers with?
+
+a) Random values
+b) Parent
+c) Predecessor/Successor
+d) Root
+Answer: c
+
+47. Prefix notation places operators?
+
+a) Between operands
+b) After operands
+c) Before operands
+d) Randomly
+Answer: c
+
+48. A doubly circular linked list has last node pointing to?
+
+a) NULL
+b) First node
+c) Middle node
+d) Itself
+Answer: b
+
+49. Which search is faster?
+
+a) Linear
+b) Binary
+c) Both same
+d) None
+Answer: b
+
+50. The process of arranging data is called?
+
+a) Searching
+b) Sorting
+c) Merging
+d) Splitting
+Answer: b
+
+51. Which of the following is not a sorting algorithm?
+
+a) Merge sort
+b) Quick sort
+c) Tower sort
+d) Bubble sort
+Answer: c
+
+52. In a binary tree, level of root node is?
+
+a) -1
+b) 0
+c) 1
+d) 2
+Answer: b
+
+53. The process of combining two sorted lists is called?
+
+a) Sorting
+b) Merging
+c) Mixing
+d) Joining
+Answer: b
+
+54. A node having two children in a tree is called?
+
+a) Leaf
+b) Internal node
+c) Root
+d) Parent only
+Answer: b
+
+55. A data structure where elements are linked is?
+
+a) Array
+b) Linked list
+c) Stack
+d) Queue
+Answer: b
+
+56. Which sorting is best for nearly sorted input?
+
+a) Quick sort
+b) Selection sort
+c) Insertion sort
+d) Merge sort
+Answer: c
+
+57. In postfix expression evaluation, which DS is used?
+
+a) Queue
+b) Stack
+c) Tree
+d) Graph
+Answer: b
+
+58. A tree without any nodes is called?
+
+a) Empty tree
+b) Null tree
+c) Zero tree
+d) Sparse tree
+Answer: a
+
+59. In binary search tree, larger values stored on ______.
+
+a) Left
+b) Right
+c) Both
+d) Root only
+Answer: b
+
+60. Which is a non-primitive data type?
+
+a) int
+b) float
+c) array
+d) char
+Answer: c
+
+61. Preorder traversal order is?
+
+a) Root, Left, Right
+b) Left, Right, Root
+c) Left, Root, Right
+d) Root, Right, Left
+Answer: a
+
+62. Which one allows random access?
+
+a) Linked list
+b) Array
+c) Stack
+d) Queue
+Answer: b
+
+63. In selection sort, number of passes needed for n elements?
+
+a) n
+b) n-1
+c) n/2
+d) log n
+Answer: b
+
+64. A balanced tree results in ______ search time.
+
+a) Constant
+b) Logarithmic
+c) Linear
+d) Quadratic
+Answer: b
+
+65. In a circular queue, front moves ______.
+
+a) Only forward
+b) Only backward
+c) Circularly
+d) Randomly
+Answer: c
+
+66. Which DS is ideal for undo operations?
+
+a) Queue
+b) Stack
+c) Array
+d) Graph
+Answer: b
+
+67. Algorithm is?
+
+a) Code
+b) Program
+c) Step-by-step procedure
+d) Function
+Answer: c
+
+68. A graph with edges having direction is called?
+
+a) Undirected
+b) Directed
+c) Mixed
+d) Simple
+Answer: b
+
+69. Time complexity of binary search (best case)?
+
+a) O(1)
+b) O(log n)
+c) O(n)
+d) O(n log n)
+Answer: a
+
+70. Which uses two pointers in each node?
+
+a) Singly linked list
+b) Doubly linked list
+c) Circular list
+d) Queue
+Answer: b
+
+71. Stack overflow happens when?
+
+a) Empty stack
+b) Full stack
+c) Top = -1
+d) Top = NULL
+Answer: b
+
+72. Queue underflow occurs when?
+
+a) Rear = MAX
+b) Front > Rear
+c) Front = -1
+d) Rear = -1
+Answer: c
+
+73. Infix to postfix conversion uses?
+
+a) Queue
+b) Stack
+c) Tree
+d) Array
+Answer: b
+
+74. A node having no children is called?
+
+a) Sibling
+b) Root
+c) Leaf
+d) Parent
+Answer: c
+
+75. A DS that stores key-value pairs is?
+
+a) Stack
+b) Hash table
+c) Queue
+d) Tree
+Answer: b
+
+76. Minimum number of nodes in height h AVL tree is?
+
+a) h
+b) h+1
+c) Fibonacci relation
+d) 2h
+Answer: c
+
+77. BFS is useful for?
+
+a) Shortest path
+b) Maximum flow
+c) Sorting
+d) None
+Answer: a
+
+78. Which sort compares adjacent elements?
+
+a) Merge sort
+b) Quick sort
+c) Bubble sort
+d) Radix sort
+Answer: c
+
+79. A linked list uses which type of memory allocation?
+
+a) Static
+b) Dynamic
+c) Fixed
+d) Sequential
+Answer: b
+
+80. Binary tree having all levels filled is?
+
+a) Full
+b) Perfect
+c) Skewed
+d) Complete
+Answer: b
+
+81. Binary tree with nodes shifted to extreme left is?
+
+a) Right skewed
+b) Left skewed
+c) Balanced
+d) Full
+Answer: b
+
+82. Hashing reduces search time to?
+
+a) O(n)
+b) O(log n)
+c) O(1)
+d) O(n²)
+Answer: c
+
+83. A DS that supports priority-based removal is?
+
+a) Circular queue
+b) Simple queue
+c) Priority queue
+d) Dequeue
+Answer: c
+
+84. A NULL pointer in tree indicates?
+
+a) End of tree
+b) No parent
+c) No child
+d) No data
+Answer: c
+
+85. The degree of leaf node is?
+
+a) 0
+b) 1
+c) 2
+d) 3
+Answer: a
+
+86. Sorting algorithm using divide-and-conquer?
+
+a) Bubble sort
+b) Merge sort
+c) Selection sort
+d) Insertion sort
+Answer: b
+
+87. The polynomial time complexity is?
+
+a) O(n!)
+b) O(n^2)
+c) O(2^n)
+d) O(n!)
+Answer: b
+
+88. Which linked list allows backward traversal?
+
+a) Singly
+b) Doubly
+c) Circular singly
+d) Stack list
+Answer: b
+
+89. In BST, inorder traversal gives?
+
+a) Reverse order
+b) Random order
+c) Sorted order
+d) Zigzag order
+Answer: c
+
+90. Which notation is easier for computers?
+
+a) Infix
+b) Prefix
+c) Postfix
+d) Both b and c
+Answer: d
+
+91. A tree with only right children is?
+
+a) Left skewed
+b) Right skewed
+c) Full
+d) Complete
+Answer: b
+
+92. A sparse matrix contains mostly?
+
+a) 1s
+b) Characters
+c) Zeros
+d) Large numbers
+Answer: c
+
+93. Queue used for CPU scheduling?
+
+a) FIFO
+b) LIFO
+c) Random
+d) Circular
+Answer: a
+
+94. Which search scans all nodes level by level?
+
+a) DFS
+b) BFS
+c) Binary search
+d) Tree search
+Answer: b
+
+95. A list formed by nodes stored non-contiguously is?
+
+a) Array
+b) Linked list
+c) Matrix
+d) Queue
+Answer: b
+
+96. Stack underflow occurs when?
+
+a) push()
+b) pop() on empty stack
+c) update()
+d) top()
+Answer: b
+
+97. Binary tree of height 0 has how many nodes?
+
+a) 0
+b) 1
+c) 2
+d) None
+Answer: b
+
+98. A DS in which elements are processed in arrival order?
+
+a) Stack
+b) Queue
+c) Linked list
+d) Graph
+Answer: b
+
+99. Recursion uses which memory segment?
+
+a) Heap
+b) Stack
+c) Code
+d) Data
+Answer: b
+
+100. The algorithm to convert infix to prefix uses?
+
+a) Queue
+b) Stack
+c) Array
+d) Tree
+Answer: b
+
+101. A complete binary tree is complete when all levels are filled except possibly?
+
+a) Rightmost
+b) Last level
+c) Root
+d) Middle
+Answer: b
+
+102. In which tree do all leaves appear in the same level?
+
+a) Binary tree
+b) AVL tree
+c) Perfect binary tree
+d) Heap
+Answer: c
+
+103. The middle element of a sorted array is used in?
+
+a) Linear search
+b) Binary search
+c) DFS
+d) BFS
+Answer: b
+
+104. A graph with all vertices connected is?
+
+a) Disconnected graph
+b) Connected graph
+c) Empty graph
+d) Tree
+Answer: b
+
+105. To evaluate prefix expression we scan from?
+
+a) Left to right
+b) Right to left
+c) Top to bottom
+d) Random
+Answer: b
+
+106. The smallest element in max heap is at?
+
+a) Root
+b) Last level
+c) Any leaf
+d) Middle
+Answer: c
+
+107. A pointer that does not point to any valid node is?
+
+a) VOID pointer
+b) NULL pointer
+c) FREE pointer
+d) Invalid pointer
+Answer: b
+
+108. DFS is preferred when?
+
+a) Need shortest path
+b) Need deep traversal
+c) Need breadth first
+d) Need minimum space
+Answer: b
+
+109. Time complexity of merge sort?
+
+a) O(n²)
+b) O(n log n)
+c) O(n)
+d) O(log n)
+Answer: b
+
+110. Which data structure is used in OS for memory management?
+
+a) Linked list
+b) Queue
+c) Graph
+d) Tree
+Answer: a
+
+111. Another name for 2–3 tree is?
+
+a) Balanced tree
+b) Multiway tree
+c) Full tree
+d) Heap
+Answer: b
+
+112. Overflow happens in queue when?
+
+a) Empty
+b) Full
+c) Rear < Front
+d) Front = Rear
+Answer: b
+
+113. A polynomial can be stored using?
+
+a) Array
+b) Linked list
+c) Both
+d) None
+Answer: c
+
+114. A node with maximum children in a binary tree?
+
+a) 1
+b) 2
+c) 3
+d) ∞
+Answer: b
+
+115. Minimum number of edges in a tree with n nodes?
+
+a) n
+b) n+1
+c) n-1
+d) n/2
+Answer: c
+
+116. Which algorithm uses pivot element?
+
+a) Merge sort
+b) Quick sort
+c) Heap sort
+d) Selection sort
+Answer: b
+
+117. A self-balancing binary search tree is?
+
+a) BST
+b) AVL
+c) Heap
+d) Huffman tree
+Answer: b
+
+118. Which uses hashing?
+
+a) Stack
+b) Queue
+c) Dictionary
+d) Array
+Answer: c
+
+119. In a tree, siblings are nodes having same?
+
+a) Data
+b) Height
+c) Parent
+d) Level
+Answer: c
+
+120. Height of tree with one node?
+
+a) -1
+b) 0
+c) 1
+d) 2
+Answer: b
+
+121. BFS uses which auxiliary DS?
+
+a) Stack
+b) Queue
+c) Tree
+d) Array
+Answer: b
+
+122. Which node is at the top of stack?
+
+a) First
+b) Last inserted
+c) Middle
+d) Oldest
+Answer: b
+
+123. Worst case of binary search occurs when?
+
+a) Middle element
+b) 1st element
+c) Last element
+d) Absent element
+Answer: d
+
+124. The DS used for job scheduling?
+
+a) Queue
+b) Stack
+c) Linked list
+d) Tree
+Answer: a
+
+125. Graph with no edges?
+
+a) Null graph
+b) Empty graph
+c) Full graph
+d) Tree
+Answer: a
+
+126. Hashing uses what type of array?
+
+a) Sparse
+b) Direct access table
+c) Linked list
+d) Trees
+Answer: b
+
+127. Which avoids recursion?
+
+a) Queue
+b) Loop
+c) Stack
+d) Tree
+Answer: b
+
+128. A child of root is at what level?
+
+a) Level 0
+b) Level 1
+c) Level 2
+d) Level 3
+Answer: b
+
+129. Time complexity of quick sort (average)?
+
+a) O(n²)
+b) O(n log n)
+c) O(n)
+d) O(log n)
+Answer: b
+
+130. In C, the array index is?
+
+a) int
+b) char
+c) float
+d) pointer
+Answer: a
+
+131. Which pointer is required in singly linked list?
+
+a) prev
+b) next
+c) both
+d) none
+Answer: b
+
+132. Maximum number of nodes in height h BST?
+
+a) h
+b) h²
+c) 2^(h+1) -1
+d) 2h
+Answer: c
+
+133. Reverse polish notation is?
+
+a) Prefix
+b) Postfix
+c) Infix
+d) Hybrid
+Answer: b
+
+134. Queue front is always?
+
+a) First inserted element
+b) Last inserted
+c) Middle
+d) Random
+Answer: a
+
+135. Balanced tree allows?
+
+a) Faster search
+b) Slower search
+c) No search
+d) Random search
+Answer: a
+
+136. DFS is good for?
+
+a) Shortest path
+b) Detecting cycles
+c) Level traversal
+d) Sorting
+Answer: b
+
+137. A complete graph has how many edges (n vertices)?
+
+a) n
+b) n-1
+c) n(n-1)/2
+d) n²
+Answer: c
+
+138. A heap is an example of?
+
+a) Binary tree
+b) Complete binary tree
+c) Skewed tree
+d) Forest
+Answer: b
+
+139. Merging two sorted arrays takes?
+
+a) O(n log n)
+b) O(n²)
+c) O(n)
+d) O(log n)
+Answer: c
+
+140. Tower of Hanoi uses?
+
+a) Queue
+b) Graph
+c) Recursion
+d) Array
+Answer: c
+
+141. FIFO is used in?
+
+a) Queue
+b) Stack
+c) Linked list
+d) Tree
+Answer: a
+
+142. Minimum height of AVL tree?
+
+a) log n
+b) n
+c) n²
+d) n log n
+Answer: a
+
+143. In BFS, nodes are visited in?
+
+a) Depth-first
+b) Level order
+c) Random
+d) Spiral
+Answer: b
+
+144. A linked list where last node points to first node is?
+
+a) Circular
+b) Linear
+c) Doubly
+d) Simple
+Answer: a
+
+145. Parent of root is?
+
+a) Leaf
+b) NULL
+c) Root
+d) Sibling
+Answer: b
+
+146. Which sort is fastest for large data?
+
+a) Bubble
+b) Quick
+c) Insertion
+d) Selection
+Answer: b
+
+147. Stack is useful for?
+
+a) Undo-redo
+b) Scheduling
+c) Graph search
+d) None
+Answer: a
+
+148. Linked list searching complexity?
+
+a) O(log n)
+b) O(1)
+c) O(n)
+d) O(n log n)
+Answer: c
+
+149. Root of max heap has?
+
+a) Smallest element
+b) Middle element
+c) Largest element
+d) Random
+Answer: c
+
+150. Preorder traversal used for?
+
+a) Sorted output
+b) Copying tree
+c) Deleting tree
+d) None
+Answer: b
+
+151. Which reduces the height of BST?
+
+a) Insertion
+b) Rotation
+c) Deletion
+d) Hashing
+Answer: b
+
+152. Queue rear indicates?
+
+a) Front element
+b) Last element
+c) Middle
+d) Root
+Answer: b
+
+153. Binary search requires?
+
+a) Unsorted list
+b) Sorted list
+c) Random list
+d) Cyclic list
+Answer: b
+
+154. Sparse matrix stored using?
+
+a) Arrays
+b) Triplets
+c) Graph
+d) Tree
+Answer: b
+
+155. Which sort is stable?
+
+a) Quick
+b) Merge
+c) Selection
+d) Heap
+Answer: b
+
+156. Each node in linked list contains?
+
+a) Data
+b) Address
+c) Both
+d) None
+Answer: c
+
+157. What is indegree of leaf node?
+
+a) 0
+b) 1
+c) 2
+d) n
+Answer: b
+
+158. Which search uses backtracking?
+
+a) DFS
+b) BFS
+c) Binary search
+d) Linear search
+Answer: a
+
+159. Complete graph edge count is?
+
+a) (n-1)
+b) n(n-1)/2
+c) n²
+d) 2n
+Answer: b
+
+160. Heap is used in?
+
+a) Heap sort
+b) BFS
+c) DFS
+d) Recursion
+Answer: a
+
+161. In fix notation requires?
+
+a) Parentheses
+b) No parentheses
+c) Single operand
+d) None
+Answer: a
+
+162. Priority queue removes?
+
+a) First element
+b) Last element
+c) Highest priority
+d) Lowest priority
+Answer: c
+
+163. Red-black tree is?
+
+a) Balanced
+b) Unbalanced
+c) Linear
+d) Skewed
+Answer: a
+
+164. Which uses adjacency matrix?
+
+a) Graph
+b) Tree
+c) Stack
+d) Queue
+Answer: a
+
+165. Circular list avoids?
+
+a) Searching
+b) Traversal stopping
+c) Sorting
+d) Hashing
+Answer: b
+
+166. Height of complete binary tree with n nodes?
+
+a) n
+b) log n
+c) n log n
+d) n²
+Answer: b
+
+167. Stack implementation easiest through?
+
+a) Array
+b) Tree
+c) Graph
+d) Matrix
+Answer: a
+
+168. Which sorting is not comparison based?
+
+a) Bubble
+b) Quick
+c) Merge
+d) Radix
+Answer: d
+
+169. Breadth-first traversal of tree uses?
+
+a) Stack
+b) Queue
+c) Array
+d) Linked list
+Answer: b
+
+170. Which DS supports variable size?
+
+a) Array
+b) Linked list
+c) Matrix
+d) Tuple
+Answer: b
+
+171. Hash table performance depends on?
+
+a) Collisions
+b) Sorting
+c) BFS
+d) Tree height
+Answer: a
+
+172. Which tree stores frequency counts?
+
+a) AVL
+b) Heap
+c) Huffman
+d) BST
+Answer: c
+
+173. Queue implementation in OS is used in?
+
+a) Paging
+b) Scheduling
+c) Routing
+d) Encryption
+Answer: b
+
+174. Which allows constant-time insertion at beginning?
+
+a) Array
+b) Stack
+c) Linked list
+d) Queue
+Answer: c
+
+175. Best case of bubble sort?
+
+a) O(n)
+b) O(n log n)
+c) O(log n)
+d) O(n²)
+Answer: a
+
+176. In-order traversal of BST gives?
+
+a) Sorted list
+b) Reverse
+c) Random
+d) Zigzag
+Answer: a
+
+177. Graph cycle detection uses?
+
+a) BFS
+b) DFS
+c) Both
+d) None
+Answer: c
+
+178. Height of skewed tree is?
+
+a) log n
+b) n
+c) n²
+d) 1
+Answer: b
+
+179. Representation of adjacency list uses?
+
+a) Array of lists
+b) 2D array
+c) Matrix
+d) Trees
+Answer: a
+
+180. To delete tree recursively, traversal used?
+
+a) Preorder
+b) Postorder
+c) Inorder
+d) BFS
+Answer: b
+
+181. Which uses free list?
+
+a) Array
+b) Linked list
+c) Graph
+d) Tree
+Answer: b
+
+182. Height of empty tree?
+
+a) -1
+b) 0
+c) 1
+d) None
+Answer: a
+
+183. Queue implemented using two stacks gives?
+
+a) Faster enqueue
+b) Faster dequeue
+c) Same
+d) Random
+Answer: a
+
+184. Main property of BST?
+
+a) Parent > child
+b) Left < root < right
+c) Right < left
+d) Root < left
+Answer: b
+
+185. Which sort repeatedly selects smallest element?
+
+a) Insertion
+b) Selection
+c) Merge
+d) Quick
+Answer: b
+
+186. Height of full tree with n nodes?
+
+a) log₂(n + 1) − 1
+b) n − 1
+c) n
+d) n²
+Answer: a
+
+187. What is tail pointer?
+
+a) First node
+b) Last node
+c) Middle node
+d) Root
+Answer: b
+
+188. Graph storing all edges twice is?
+
+a) Directed
+b) Undirected
+c) Mixed
+d) Empty
+Answer: b
+
+189. In postfix evaluation, operator pops?
+
+a) One operand
+b) Two operands
+c) Three operands
+d) None
+Answer: b
+
+190. Multiway tree node can have?
+
+a) One child
+b) Many children
+c) Zero children only
+d) Two children
+Answer: b
+
+191. Hashing uses what to map keys?
+
+a) Recursion
+b) Hash function
+c) Search tree
+d) Matrix
+Answer: b
+
+192. Stack top initialized to?
+
+a) 1
+b) 0
+c) -1
+d) NULL
+Answer: c
+
+193. Queue rear initialized to?
+
+a) 0
+b) -1
+c) 1
+d) NULL
+Answer: b
+
+194. Traversal used for expression tree evaluation?
+
+a) Inorder
+b) Preorder
+c) Postorder
+d) BFS
+Answer: c
+
+195. Full binary tree has how many children per node?
+
+a) 0 or 1
+b) 1
+c) 0 or 2
+d) Only 2
+Answer: c
+
+196. Worst case of quick sort?
+
+a) O(n)
+b) O(n log n)
+c) O(n²)
+d) O(log n)
+Answer: c
+
+197. Hash table collision handled using?
+
+a) Sorting
+b) Chaining
+c) Searching
+d) Stacking
+Answer: b
+
+198. A stack can be implemented by?
+
+a) Array
+b) Linked list
+c) Both
+d) None
+Answer: c
+
+199. Space complexity refers to?
+
+a) Time used
+b) Memory used
+c) Compiler size
+d) Disk usage
+Answer: b
+
+200. The best data structure to check palindrome?
+
+a) Array
+b) Stack
+c) Queue
+d) Heap
+Answer: b

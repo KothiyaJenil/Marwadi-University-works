@@ -1,0 +1,269 @@
+ 					***UNIT-5***
+--------------------------------------------------------------------------------------------------
+
+49.Write a java program to write a simple message into a file using a FileOutputStream 
+
+import java.io.*;
+
+class WriteFileExample {
+    public static void main(String[] args) {
+        try {
+            FileOutputStream fout = new FileOutputStream("message.txt");
+            String msg = "Welcome to Java File Handling!";
+            fout.write(msg.getBytes());
+            fout.close();
+            System.out.println("Message written successfully.");
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+}
+
+
+	***OUTPUT*** 
+
+Message written successfully.
+
+--------------------------------------------------------------------------------------------------
+
+50.Write a java program to read a message (data) from a file by using FileInputStream
+
+import java.io.*;
+
+class ReadFileExample {
+    public static void main(String[] args) {
+        try {
+            FileInputStream fin = new FileInputStream("message.txt");
+            int i;
+            while ((i = fin.read()) != -1)
+                System.out.print((char) i);
+            fin.close();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+}
+
+
+	***OUTPUT*** 
+
+Welcome to Java File Handling!
+
+--------------------------------------------------------------------------------------------------
+ 
+51.Write a java program to write data into a file characterwise by using a FileWriter class of IO
+
+import java.io.*;
+
+class FileWriterExample {
+    public static void main(String[] args) {
+        try {
+            FileWriter fw = new FileWriter("charfile.txt");
+            fw.write("Java FileWriter Example");
+            fw.close();
+            System.out.println("Data written successfully using FileWriter.");
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+}
+
+	***OUTPUT*** 
+
+Data written successfully using FileWriter.
+
+--------------------------------------------------------------------------------------------------
+ 
+52.Write a java program to read data characterwise from a file by using a FileReader class 
+
+import java.io.*;
+
+class FileReaderExample {
+    public static void main(String[] args) {
+        try {
+            FileReader fr = new FileReader("charfile.txt");
+            int i;
+            while ((i = fr.read()) != -1)
+                System.out.print((char) i);
+            fr.close();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+}
+
+	***OUTPUT*** 
+
+Java FileWriter Example
+
+--------------------------------------------------------------------------------------------------
+
+53.Write a java program to create a thread using Thread Class 
+
+class MyThread extends Thread {
+    public void run() {
+        for (int i = 1; i <= 5; i++)
+            System.out.println("Thread running: " + i);
+    }
+
+    public static void main(String[] args) {
+        MyThread t = new MyThread();
+        t.start();
+    }
+}
+
+	***OUTPUT*** 
+
+Thread running: 1
+Thread running: 2
+Thread running: 3
+Thread running: 4
+Thread running: 5
+
+--------------------------------------------------------------------------------------------------
+
+54.Write a java program to create a thread using Runnable class 
+
+class MyRunnable implements Runnable {
+    public void run() {
+        for (int i = 1; i <= 5; i++)
+            System.out.println("Runnable Thread: " + i);
+    }
+
+    public static void main(String[] args) {
+        Thread t = new Thread(new MyRunnable());
+        t.start();
+    }
+}
+
+
+	***OUTPUT*** 
+
+Runnable Thread: 1
+Runnable Thread: 2
+Runnable Thread: 3
+Runnable Thread: 4
+Runnable Thread: 5
+
+--------------------------------------------------------------------------------------------------
+
+55.Write a java program to set Thread name and priority & test it 
+
+class ThreadInfo extends Thread {
+    public void run() {
+        System.out.println("Running " + Thread.currentThread().getName() +
+                           " with priority " + Thread.currentThread().getPriority());
+    }
+
+    public static void main(String[] args) {
+        ThreadInfo t1 = new ThreadInfo();
+        ThreadInfo t2 = new ThreadInfo();
+
+        t1.setName("Thread-A");
+        t2.setName("Thread-B");
+
+        t1.setPriority(Thread.MIN_PRIORITY);
+        t2.setPriority(Thread.MAX_PRIORITY);
+
+        t1.start();
+        t2.start();
+    }
+}
+
+	***OUTPUT*** 
+
+Running Thread-A with priority 1
+Running Thread-B with priority 10
+
+--------------------------------------------------------------------------------------------------
+
+56.Write a java program to create two threads and make them Synchronized (Thread Safe) 
+
+class Table {
+    synchronized void printTable(int n) {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(n * i);
+            try {
+                Thread.sleep(500);
+            } catch (Exception e) {
+                System.out.println(e);
+            }
+        }
+    }
+}
+
+class Thread1 extends Thread {
+    Table t;
+    Thread1(Table t) { this.t = t; }
+    public void run() { t.printTable(5); }
+}
+
+class Thread2 extends Thread {
+    Table t;
+    Thread2(Table t) { this.t = t; }
+    public void run() { t.printTable(100); }
+}
+
+class SyncExample {
+    public static void main(String[] args) {
+        Table obj = new Table();
+        Thread1 t1 = new Thread1(obj);
+        Thread2 t2 = new Thread2(obj);
+
+        t1.start();
+        t2.start();
+    }
+}
+
+	***OUTPUT*** 
+
+5
+10
+15
+20
+25
+100
+200
+300
+400
+500
+
+--------------------------------------------------------------------------------------------------
+
+57.Write a java program to join two threads which perform loop operations 
+
+class JoinExample extends Thread {
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(Thread.currentThread().getName() + ": " + i);
+            try { Thread.sleep(500); } catch (Exception e) {}
+        }
+    }
+
+    public static void main(String[] args) {
+        JoinExample t1 = new JoinExample();
+        JoinExample t2 = new JoinExample();
+
+        t1.setName("First");
+        t2.setName("Second");
+
+        t1.start();
+        try { t1.join(); } catch (Exception e) {}
+        t2.start();
+    }
+}
+
+	***OUTPUT*** 
+
+First: 1
+First: 2
+First: 3
+First: 4
+First: 5
+Second: 1
+Second: 2
+Second: 3
+Second: 4
+Second: 5
+
+--------------------------------------------------------------------------------------------------

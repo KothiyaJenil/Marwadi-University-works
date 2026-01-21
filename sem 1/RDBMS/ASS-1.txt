@@ -1,0 +1,52 @@
+Q1. Create above Table name as person.
+
+create table person
+(
+person_id number(11),
+fname char(11),
+lname char(10),
+city char(10),
+sal number(9)
+);
+
+Q2. Insert Data shown in table.
+
+insert into person values(1,'sneha','seth','rajkot',10000);
+insert into person values(2,'puja','parmar','ahmedabad',20000);
+insert into person values(3,'riya','gajar','pune',8000);
+insert into person values(4,'sandip','jadeja','pune',5000);
+insert into person values(5,'alpesh','prajapati','mumbai',200);
+
+Q3. Select information about Person_Id, fname of the person.
+SELECT person_id, fname FROM person;
+ 
+Q4. Display the list of person.
+SELECT * FROM person;
+
+Q5. Sort the person by person_id.
+SELECT * FROM person ORDER BY person_id;
+
+Q6. Display city from table with distinct values.
+SELECT DISTINCT city FROM person;
+
+Q7. Change the city of sandip from pune to banglor.
+UPDATE person SET city = 'banglor'WHERE fname = 'sandip' AND city = 'pune';
+
+Q8. Display person whose lname is „jadeja‟.
+SELECT * FROM person WHERE lname = 'jadeja';
+
+Q9. Add new columns state, Birthdate and pincode into table.
+ALTER TABLE person ADD (
+    state CHAR(15),
+    birthdate DATE,
+    pincode NUMBER(6)
+);
+
+Q10. Display all information of person having salary more than 6000.
+SELECT * FROM person WHERE sal > 6000;
+ 
+Q11. Delete the person having salary less than 1000.
+DELETE FROM person WHERE sal < 1000;
+
+Q12. Rename table from person to person_master.
+rename person to person_master;

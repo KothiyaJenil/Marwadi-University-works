@@ -1,0 +1,101 @@
+Q1. Create above Table name as Cust master.
+
+create table Cust_master (
+Cust_no char(2) PRIMARY KEY,
+Cust_name char(10),
+Address1 char(20),
+Address2 char(20),
+City char(15),
+State char(20),
+Ph_no char(10)
+);
+
+02. Insert Data shown in table.
+
+INSERT INTO Cust_master VALUES('C1', 'Priya', 'Ring Road', 'Puja Park.', 'Ahmedabad', 'Gujarat', '8989878548'); 
+INSERT INTO Cust_master VALUES('C2', 'Puja', 'Lajpat Nager', 'Shyamal colony', 'Banaras', 'U.P', '7898456213'); 
+INSERT INTO Cust_master VALUES('C3', 'Ankit', 'Borivali', 'Panchayat nager', 'Mumbai', 'Maharashtra', '7885984251'); 
+INSERT INTO Cust_master VALUES('C4', 'Ravi', 'Vajdi Road', 'Nandbhoomi colony', 'Delhi', 'Delhi', '7898452034'); 
+INSERT INTO Cust_master VALUES('C5', 'Alpa', 'Jamanager Road', 'Railway colony', 'Rajkot', 'Gujarat', '7465241589');
+
+
+Q3. Select information about all customer.
+SELECT * FROM Cust_master;
+
+CU CUST_NAME  ADDRESS1             ADDRESS2             CITY            STATE                PH_NO
+-- ---------- -------------------- -------------------- --------------- -------------------- ----------
+C1 Priya      Ring Road            Puja Park.           Ahmedabad       Gujarat              8989878548
+C2 Puja       Lajpat Nager         Shyamal colony       Banaras         U.P                  7898456213
+C3 Ankit      Borivali             Panchayat nager      Mumbai          Maharashtra          7885984251
+C4 Ravi       Vajdi Road           Nandbhoomi colony    Delhi           Delhi                7898452034
+C5 Alpa       Jamanager Road       Railway colony       Rajkot          Gujarat              7465241589
+
+
+
+Q4. Display the list of customers belonging to "Gujarat" state.
+SELECT * FROM Cust_master WHERE State = 'Gujarat';
+
+CU CUST_NAME  ADDRESS1             ADDRESS2             CITY            STATE                PH_NO
+-- ---------- -------------------- -------------------- --------------- -------------------- ----------
+C1 Priya      Ring Road            Puja Park.           Ahmedabad       Gujarat              8989878548
+C5 Alpa       Jamanager Road       Railway colony       Rajkot          Gujarat              7465241589
+
+
+Q5. Sort the customer by customer name.
+SELECT * FROM Cust_master ORDER BY Cust_name;
+
+CU CUST_NAME  ADDRESS1             ADDRESS2             CITY            STATE                PH_NO
+-- ---------- -------------------- -------------------- --------------- -------------------- ----------
+C5 Alpa       Jamanager Road       Railway colony       Rajkot          Gujarat              7465241589
+C3 Ankit      Borivali             Panchayat nager      Mumbai          Maharashtra          7885984251
+C1 Priya      Ring Road            Puja Park.           Ahmedabad       Gujarat              8989878548
+C2 Puja       Lajpat Nager         Shyamal colony       Banaras         U.P                  7898456213
+C4 Ravi       Vajdi Road           Nandbhoomi colony    Delhi           Delhi                7898452034 
+
+Q6. Display city from table with distinct values.
+ SELECT DISTINCT City FROM Cust_master;
+
+CITY
+---------------
+Ahmedabad
+Banaras
+Mumbai
+Rajkot
+Delhi
+
+
+Q7. Change the address of priya from Ring Road" to CG Road".
+ UPDATE Cust_master
+    SET Address1 = 'CG Road'
+   WHERE Cust_name = 'Priya' AND Address1 = 'Ring Road';
+
+1 row updated.
+
+Q8. Display city of customer whose state is Gujarat.
+SELECT City FROM Cust_master WHERE State = 'Gujarat';
+
+CITY
+---------------
+Ahmedabad
+Rajkot
+
+
+Q9. Add new column pin code into custmaster table.
+ ALTER TABLE Cust_master ADD pin_code CHAR(6);
+
+Table altered.
+
+Q10. Drop column pin code from table.
+ALTER TABLE Cust_master DROP COLUMN pin_code;
+Table altered.
+
+Q11. Delete the customer having ph_no '7898452034".
+ DELETE FROM Cust_master WHERE Ph_no = '7898452034';
+
+1 row deleted.
+
+Q12. Rename table from cust master to customer-detail.
+ rename Cust_master TO customer_detail;
+
+Table renamed.
+

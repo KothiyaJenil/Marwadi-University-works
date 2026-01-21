@@ -1,0 +1,148 @@
+1. Create table
+CREATE TABLE CUSTOMER (
+  CUST_NO    INT(4) PRIMARY KEY,
+  FIRST_NAME VARCHAR(20) NOT NULL,
+  LAST_NAME  VARCHAR(20),
+  ADDRESS    VARCHAR(20),
+  CITY       VARCHAR(8),
+  STATE      VARCHAR(20),
+  PIN        VARCHAR(6),
+  B_DATE     DATE,
+  STATUS     CHAR(1) CHECK (STATUS IN ('V','I','A'))
+);
+Table created.
+
+2. Insert given data
+
+INSERT INTO CUSTOMER VALUES (1003, 'RAJ', 'BAHADUR', 'SHANTI VILLA', 'UDP', 'KARNATAKA', '576101', '01-AUG-1970', 'V');
+INSERT INTO CUSTOMER VALUES (1004, 'FELIX', 'SIMON', 'M-J-56 PJM', 'GOA', 'GOA', '403002', '12-FEB-1971', 'A');
+INSERT INTO CUSTOMER VALUES (1005, 'RAJAN', 'KUTTY', 'A1 TRADERS KNR', 'KERALA', 'KERALA', '670001', '09-JUN-1971', 'A');
+INSERT INTO CUSTOMER VALUES (1006, 'SHILPA', 'PAI', '12/4B MNG', 'KARNATAKA', 'KARNATAKA', '574154', '11-DEC-1970', 'I');
+INSERT INTO CUSTOMER VALUES (1007, 'BOSCO', 'RAKSHIT', 'R.K. PLAZA', 'BNG', 'KARNATAKA', '576201', '01-JAN-1971', 'A');
+
+1 row created.
+
+3. Display all records
+SELECT * FROM CUSTOMER;
+CUST_NO     FIRST_NAME     LAST_NAME       ADDRESS          CITY     STATE                PIN        B_DATE         S
+---------- -------------------- -------------------- -------------------- -------- -------------------- ------ --------- --- --------- -
+1003                     raj                    bahadur              shanti villa         udp      karnataka          576101      01-AUG-70     v
+1004                    felix                  simon                  m-j-56 pjm        goa      goa                     403002     12-FEB-71       a
+1006                  shilpa                 pai                       12/4b                mng      karnataka           574154      11-DEC-70      i
+1007                   bosco                rakshit                 r.k. plaza           bng      karnataka           576201     01-JAN-71       a
+1005                    rajan                kutty                    a1 traders           knr      kerala                 670001     09-JUN-71      a
+
+
+4. Records where state = KARNATAKA
+SELECT * FROM CUSTOMER WHERE STATE='KARNATAKA';
+no rows selected
+
+5. Delete row where PIN=576201
+DELETE FROM CUSTOMER WHERE PIN='576201';
+1 row deleted.
+
+6. Update PIN for CUST_NO=1004
+UPDATE CUSTOMER SET PIN='476001' WHERE CUST_NO=1004;
+1 row updated.
+
+7. Update ADDRESS & PIN for CUST_NO=1003
+UPDATE CUSTOMER  SET ADDRESS='KAVI MUDDANNA MARG', PIN='576104'  WHERE CUST_NO=1003;
+1 row updated.
+
+8. Delete Karnataka customers & retrieve remaining
+DELETE FROM CUSTOMER WHERE STATE='KARNATAKA';
+0 rows deleted.
+
+SELECT * FROM CUSTOMER;CUST_NO   
+
+CUST_NO     FIRST_NAME     LAST_NAME       ADDRESS          CITY     STATE                PIN        B_DATE         S
+---------- -------------------- -------------------- -------------------- -------- -------------------- ------ --------- -------- ------ -----
+1003                     raj                    bahadur              shanti villa         udp      karnataka          576101      01-AUG-70     v
+1004                    felix                  simon                  m-j-56 pjm        goa      goa                     403002     12-FEB-71       a
+1006                  shilpa                 pai                       12/4b                mng      karnataka           574154      11-DEC-70      i
+1005                    rajan                kutty                    a1 traders           knr      kerala                 670001     09-JUN-71      a
+
+9. Records for INVALID (‘I’)
+SELECT * FROM CUSTOMER WHERE STATUS='I';
+no rows selected
+
+10. Records with unique state (no duplicates)
+SELECT DISTINCT STATE FROM CUSTOMER;
+STATE
+--------------------
+karnataka
+goa
+kerala
+
+11. Sort by STATE ascending
+SELECT * FROM CUSTOMER ORDER BY STATE ASC;
+
+12. Sort STATE descending
+SELECT STATE FROM CUSTOMER ORDER BY STATE DESC;
+
+13. Karnataka customers who are VALID (‘V’)
+SELECT * FROM CUSTOMER WHERE STATE='KARNATAKA' AND STATUS='V';
+
+
+CUST_NO     FIRST_NAME     LAST_NAME       ADDRESS          CITY     STATE                PIN        B_DATE         S
+---------- -------------------- -------------------- -------------------- -------- -------------------- ------ --------- --- -------- ------ -----
+ 1004                    felix                  simon                  m-j-56 pjm        goa      goa                     403002     12-FEB-71          a
+1006                  shilpa                 pai                       12/4b                   mng      karnataka           574154      11-DEC-70      i
+1003                     raj                    bahadur              shanti villa         udp      karnataka          576101      01-AUG-70      v
+1005                    rajan                kutty                    a1 traders           knr      kerala                 670001     09-JUN-71        a
+
+14. Karnataka / Kerala customers
+SELECT * FROM CUSTOMER WHERE STATE IN ('KARNATAKA','KERALA');
+no rows selected
+
+15. Karnataka / Kerala customers who are ACTIVE (‘A’)
+SELECT * FROM CUSTOMER WHERE STATE IN ('KARNATAKA','KERALA') AND STATUS='A';
+no rows selected
+
+16. Karnataka customers with PIN=576201
+SELECT * FROM CUSTOMER WHERE STATE='KARNATAKA' AND PIN='576201';
+no rows selected
+
+17. Display all rows except CUST_NO=1005
+SELECT * FROM CUSTOMER WHERE CUST_NO <> 1005;
+
+CUST_NO     FIRST_NAME     LAST_NAME       ADDRESS          CITY     STATE                PIN        B_DATE         S
+---------- -------------------- -------------------- -------------------- -------- -------------------- ------ --------- --- ------ -----
+1003                     raj                    bahadur              shanti villa         udp      karnataka          576101      01-AUG-70     v
+1004                    felix                  simon                  m-j-56 pjm        goa      goa                     403002     12-FEB-71       a
+1006                  shilpa                 pai                       12/4b                mng      karnataka           574154      11-DEC-70      i
+
+18. Rows where state begins with K
+SELECT * FROM CUSTOMER WHERE STATE LIKE 'K%';
+no rows selected
+
+19. Rows where name contains RAJ
+SELECT * FROM CUSTOMER WHERE FIRST_NAME LIKE '%RAJ%' OR LAST_NAME LIKE '%RAJ%';
+no rows selected
+
+20. Rows where CUST_NO between 1003 and 1005
+SELECT * FROM CUSTOMER WHERE CUST_NO BETWEEN 1003 AND 1005;
+CUST_NO     FIRST_NAME     LAST_NAME       ADDRESS          CITY     STATE                PIN        B_DATE         S
+---------- -------------------- -------------------- -------------------- -------- -------------------- ------ --------- --- ------ -----
+1003                     raj                    bahadur              shanti villa         udp      karnataka          576101      01-AUG-70     v
+1005                    rajan                kutty                    a1 traders           knr      kerala                 670001     09-JUN-71      a
+1005                    rajan                kutty                    a1 traders           knr      kerala                 670001     09-JUN-71      a
+
+21. Rows with dates between 10-JAN-70 and 31-JUL-96
+SELECT * FROM CUSTOMER WHERE B_DATE BETWEEN TO_DATE('10-JAN-1970','DD-MON-YYYY') AND TO_DATE('31-JUL-1996','DD-MON-YYYY');   
+
+CUST_NO     FIRST_NAME     LAST_NAME       ADDRESS          CITY     STATE                PIN        B_DATE         S
+---------- -------------------- -------------------- -------------------- -------- -------------------- ------ --------- -------------------- 
+1003                     raj                    bahadur              shanti villa         udp      karnataka          576101      01-AUG-70     v
+1004                    felix                  simon                  m-j-56 pjm        goa      goa                     403002     12-FEB-71       a
+1006                  shilpa                 pai                       12/4b                mng      karnataka           574154      11-DEC-70      i
+1005                    rajan                kutty                    a1 traders           knr      kerala                 670001     09-JUN-71      a
+
+22. Rows where CITY is UDP, MNG, BNG, or PGN
+SELECT * FROM CUSTOMER WHERE CITY IN ('UDP','MNG','BNG','PGN');
+no rows selected
+
+
+23. Rename CUSTOMER table
+ALTER TABLE CUSTOMER RENAME TO CUST;
+Table altered.

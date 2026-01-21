@@ -1,0 +1,107 @@
+
+Q1. Create above Table name as item_master.
+
+create table item_master
+(
+id varchar2(2),
+name varchar2(20),
+type varchar2(20),
+price number(6),
+quality varchar2(20),
+ip_date date
+);
+
+Table created.
+
+Q2. Insert Data shown in table.
+
+INSERT INTO item_master VALUES ('I1', 'dairymilk', 'chocolate', 500, 'good', TO_DATE('12-aug-2000', 'DD-MON-YYYY'));
+INSERT INTO item_master VALUES ('I2', 'kajukatri', 'mithai', 1000, 'verygood', TO_DATE('15-jan-2016', 'DD-MON-YYYY'));
+INSERT INTO item_master VALUES ('I3', 'pizza', 'fastfood', 350, 'average', TO_DATE('20-feb-2015', 'DD-MON-YYYY'));
+INSERT INTO item_master VALUES ('I4', 'orange juice', 'juice', 50, 'best', TO_DATE('05-feb-2016', 'DD-MON-YYYY'));
+INSERT INTO item_master VALUES ('I5', 'vanilla_cack', 'bakery item', 2000, 'good', TO_DATE('01-jan-2016', 'DD-MON-YYYY'));
+
+Q3. Select information about price,quality and item_pack_date of the item
+
+select price,quality,ip_date from item_master;
+
+     PRICE QUALITY              IP_DATE
+---------- -------------------- ---------
+       500      good                 12-AUG-00
+      1000     verygood             15-JAN-16
+       350      average              20-FEB-15
+        50 	 best                 05-FEB-16
+      2000 	  good                 01-JAN-16
+
+Q4. Display information about item.
+
+select * from item_master;
+
+ID NAME                 TYPE                      PRICE QUALITY              IP_DATE
+-- -------------------- -------------------- ---------- -------------------- ---------
+I1 dairymilk            chocolate                   500 good                 12-AUG-00
+I2 kajukatri            mithai                     1000 verygood             15-JAN-16
+I3 pizza                fastfood                    350 average              20-FEB-15
+I4 orange juice         juice                        50 best                 05-FEB-16
+I5 vanilla_cack         bakery item                2000 good                 01-JAN-16
+
+Q5. Sort the person by quality.
+
+select * from item_master order by quality;
+
+ID   NAME                 TYPE                      PRICE QUALITY              IP_DATE
+-- -------------------- -------------------- ---------- -------------------- ---------
+I3  pizza                    fastfood                    350 average              20-FEB-15
+I4  orange juice         juice                        50 best                 05-FEB-16
+I5  vanilla_cack        bakery item                2000 good                 01-JAN-16
+I1  dairymilk            chocolate                   500 good                 12-AUG-00
+I2  kajukatri            mithai                     1000 verygood             15-JAN-16
+
+Q6. Display type from table with distinct values.
+
+SELECT DISTINCT type FROM item_master;
+
+TYPE
+--------------------
+juice
+chocolate
+mithai
+bakery item
+fastfood
+
+Q7. Change the quality of item from good to verygood.
+UPDATE item_master SET quality = 'verygood'
+WHERE quality = 'good';
+
+2 rows updated.
+
+Q8. Display item having quality verygood.
+
+SELECT * FROM item_master
+WHERE quality = 'verygood';
+
+ID NAME                 TYPE                      PRICE QUALITY              IP_DATE
+-- -------------------- -------------------- ---------- -------------------- ---------
+I1 dairymilk            chocolate                   500 verygood             12-AUG-00
+I2 kajukatri            mithai                     1000 verygood             15-JAN-16
+I5 vanilla_cack         bakery item                2000 verygood             01-JAN-16
+
+Q9. Add new columns item_open_date into table.
+ALTER TABLE item_master
+ADD item_open_date DATE;
+
+Table altered.
+
+Q10. Display all information of itemhaving price more than 20.
+SELECT * FROM item_master
+WHERE price > 20;
+
+Q11. Delete the item having price-50.
+DELETE FROM item_master WHERE price = 50;
+
+1 row deleted. 
+
+Q12. Rename table from person to Item detail.
+rename item_master to person;
+Table renamed.
+ 
