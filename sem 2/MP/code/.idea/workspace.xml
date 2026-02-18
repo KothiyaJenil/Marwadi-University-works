@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="359171ee-15e6-44a2-8903-283c3ac0e529" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/check_box/app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/proguard-rules.pro" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/androidTest/java/com/seam6/check_box/ExampleInstrumentedTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/java/com/seam6/check_box/MainActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/res/values-night/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/res/values/colors.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/res/values/themes.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/app/src/test/java/com/seam6/check_box/ExampleUnitTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/check_box/gradle/libs.versions.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Java PPT.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 1.1 - INTRODUCTION TO JAVA.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 1.2 - Structure and Basics of Java.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 1.3 - Basics of Java Programming.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 2.1 - Inheritance.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 2.1.1 - Visibility Control.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 2.10 - java.lang package.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 2.2 - Arrays.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 2.3 - Strings.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 2.4 - Vector and Wrappers.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 2.5 - AutoBoxing and Unboxing.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 2.6 - Interface.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 2.7 - Package.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 2.8 - Object Class.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 2.9 - Java APIs.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 3.1 Exceptions.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 3.2 Member types and classes.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 3.3 Various classes from java-util package.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 3.4 Collection Framework.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 3.5 Extra from Unit 3.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 4.1 - Multithreading.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 4.2 - Input output and file handling.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 5.1 - Introduction to Applets.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 5.2 - Introduction to Event Handling.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 5.3 - Abstract Window Toolkit - AWT.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 5.4 - Swing.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/Unit - 5.5 - Annotations.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../sem 1/Java/notes/~$Unit - 1.2 - Structure and Basics of Java.pptx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/4026.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/.idea/deploymentTargetSelector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/androidTest/java/com/seam6/calculator/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/java/com/seam6/calculator/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/app/src/test/java/com/seam6/calculator/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/calculator.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/gradle/libs.versions.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/helloWorld.zip" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="39koH20KcIqhRafrN3qm5R4MYR6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "kotlin-language-version-configured": "true",
+    "show.migrate.to.gradle.popup": "false"
+  }
+}]]></component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="359171ee-15e6-44a2-8903-283c3ac0e529" name="Changes" comment="" />
+      <created>1771249341133</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1771249341133</updated>
+    </task>
+    <servers />
+  </component>
+</project>
